@@ -1,0 +1,172 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+h3,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+.container {
+  font-size: 0.9375rem;
+  background-color: hsl(216, 12%, 8%);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  font-family: "Overpass", sans-serif;
+  background-color: #1f2630;
+  width: 330px;
+  height: auto;
+  border-radius: 15px;
+}
+.star-svg-container {
+  display: inline-block;
+  padding: .8rem;
+  border-radius: 30px;
+  background-color: #262f38;
+  height: auto;
+}
+.svg-container svg {
+  margin: 0 auto;
+}
+.main-content {
+  padding: 1.5rem;
+}
+.main-content * {
+  margin-bottom: 0.5rem;
+}
+.heading {
+  color: white;
+}
+p,
+label {
+  color: hsl(217, 12%, 63%);
+}
+fieldset {
+  all: unset;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#rating-form {
+  width: 100%;
+}
+.rating-label {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+.rating-star {
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #262f38;
+  color: #fff;
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  transition: transform 0.2s ease-in-out;
+}
+
+.rating-star:hover,
+.rating-star:focus {
+  transform: scale(1.2);
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked + .rating-star {
+  background-color: #f39c12;
+}
+
+/* Add a style for the rating message (if needed) */
+#rating-message {
+  color: red;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+button {
+  width: 100%;
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.thank-you-card{
+  text-align: center;
+}
+.thank-you-card *{
+  margin-bottom: 10px;
+}
+.rating-result{
+  margin-top: 20px;
+}
+.rating-result p {
+  display: inline-block;
+  background-color: #262f38;
+  color: hsl(25, 97%, 53%);
+  width: 180px;
+  padding: .5rem;
+  border-radius: 20px;
+}
+.thank-you-heading{
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.hidden{
+  display: none;
+}
